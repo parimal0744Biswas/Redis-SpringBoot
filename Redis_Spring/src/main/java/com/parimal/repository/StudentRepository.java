@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.parimal.entity.StudentEntity;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Long, StudentEntity>
+public interface StudentRepository extends JpaRepository<StudentEntity, Long>
 {
 
 }
