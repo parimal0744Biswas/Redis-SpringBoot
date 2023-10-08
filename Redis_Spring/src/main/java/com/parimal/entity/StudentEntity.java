@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+//@RedisHash("Student")
 public class StudentEntity
 {
 	@Id
@@ -27,5 +28,55 @@ public class StudentEntity
 	private Boolean active;
 
 	private LocalDateTime created_at;
+
+	public Long getId()
+	{
+		return id;
+	}
+
+	public void setId(Long id)
+	{
+		this.id = id;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	public String getPhone()
+	{
+		return phone;
+	}
+
+	public void setPhone(String phone)
+	{
+		this.phone = phone;
+	}
+
+	public Boolean getActive()
+	{
+		return active;
+	}
+
+	public void setActive(Boolean active)
+	{
+		this.active = active;
+	}
+
+	public LocalDateTime getCreated_at()
+	{
+		return created_at;
+	}
+
+	public void setCreated_at(LocalDateTime created_at)
+	{
+		this.created_at = created_at;
+	}
 
 }
